@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Recognition App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand">ASR-APP</a>
+            <ul class="navbar-menu">
+                <li class="navbar-item"><a href="/" class="navbar-link">Home</a></li>
+                <li class="navbar-item"><a href="about.html" class="navbar-link">About</a></li>
+                <li class="navbar-item"><a href="#" class="navbar-link">Services</a></li>
+                <li class="navbar-item"><a href="#" class="navbar-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1>Automatic Speech Recognition Application</h1>
+    <button id="start-btn">Start Listening</button>
+    <p id="status">Press the button to start listening...</p>
+    <div class="text-container">
+        <h2>Transcribed Text:</h2>
+        <p id="transcribed-text"></p>
+    </div>
+    <div class="comparison-container">
+        <h2>Comparison Text:</h2>
+        <textarea id="comparison-text" placeholder="Enter text to compare..."></textarea>
+        <button id="compare-btn">Compare Texts</button>
+    </div>
+    <div id="result"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
