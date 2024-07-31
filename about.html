@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,32 +7,49 @@
 </head>
 <body>
 
-<div class="container">
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="#" class="navbar-brand">ASR-APP</a>
-            <ul class="navbar-menu">
-                <li class="navbar-item"><a href="/" class="navbar-link">Home</a></li>
-                <li class="navbar-item"><a href="about.html" class="navbar-link">About</a></li>
-                <li class="navbar-item"><a href="#" class="navbar-link">Services</a></li>
-                <li class="navbar-item"><a href="#" class="navbar-link">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <h1>Automatic Speech Recognition Application</h1>
-    <button id="start-btn">Start Listening</button>
-    <p id="status">Press the button to start listening...</p>
-    <div class="text-container">
-        <h2>Transcribed Text:</h2>
-        <p id="transcribed-text"></p>
+    <div class="nav-dir">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="/" class="navbar-brand">ASR-APP</a>
+                <ul class="navbar-menu">
+                    <li class="navbar-item"><a href="/" class="navbar-link">Anasayfa</a></li>
+                    <li class="navbar-item"><a href="plans.html" class="navbar-link">Planlar</a></li>
+                    <li class="navbar-item"><a href="about.html" class="navbar-link">Hakkımızda</a></li>
+                    <li class="navbar-item"><a href="contact.html" class="navbar-link">İletişim</a></li>
+                    <li class="navbar-item"><a href="profile.html" class="navbar-link">Profilim</a></li>
+                </ul>
+            </div>
+        </nav>
     </div>
-    <div class="comparison-container">
-        <h2>Comparison Text:</h2>
-        <textarea id="comparison-text" placeholder="Enter text to compare..."></textarea>
-        <button id="compare-btn">Compare Texts</button>
+
+    
+    <div><img id="isteknoloji" src="images/isteknoloji.png"></div>
+    <div><h1>Biz kimiz?</h1></div>
+
+    <div class="about-content">
+        <p class="whoweare">Biz, ses tanıma teknolojileri alanında uzmanlaşmış bir ekibiz. ASR-APP, konuşmayı metne dönüştürme 
+            konusunda en son teknolojileri kullanarak hızlı ve doğru çözümler sunar. Amacımız, kullanıcılarımıza
+            en iyi deneyimi sağlamak ve onların ihtiyaçlarını karşılamak için sürekli olarak kendimizi geliştirmektir.
+            Teknoloji ve inovasyonu bir araya getirerek, herkesin erişebileceği çözümler üretiyoruz.
+        </p>
+        <p class="whoweare">
+            İş Teknoloji, kuruluşundan bu yana yüksek bilgi teknolojileri ve nesneye yönelik uygulama geliştirme 
+            yaklaşımları ile kamu ve özel sektör IT projelerinin geliştirilmesinde teknolojik her türlü gelişim aracı 
+            kullanılarak günümüz teknolojisi daima takip edilmektedir. İş Teknoloji, orta ve büyük ölçekli kuruluşların
+            çok amaçlı, çok katmanlı ve çok kanallı iş altyapısı gereksinimlerini yüksek teknolojiye dayalı mühendislik 
+            çözümler sunmaktadır. İş Teknoloji ağırlıklı olarak iş ve süreç yönetimi sistemleri üzerinde konusunda uzman
+            kadrosuyla birçok başarılı projeye imza atmıştır. İş Teknoloji, yeni nesil yazılım teknolojileri ve sistem 
+            çözümlerinde tüm müşterilerine en uygun bilişim çözümlerini sunmaktadır.
+        </p>
     </div>
-    <div id="result"></div>
-</div>
+
+    <div class="footer-div">
+        <footer>
+            <p>Copyright &copy; 2024 ASR-APP - All Rights Reserved.</p>
+            <p><a href="mailto:youremail@example.com">asrapp@isteknoloji.com</a></p>
+        </footer>
+    </div>
+
 <script src="script.js"></script>
 </body>
 </html>

@@ -7,49 +7,54 @@
 </head>
 <body>
 
-<div class="container">
+    <div class="nav-dir">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="/" class="navbar-brand">ASR-APP</a>
+                <ul class="navbar-menu">
+                    <li class="navbar-item"><a href="/" class="navbar-link">Anasayfa</a></li>
+                    <li class="navbar-item"><a href="plans.html" class="navbar-link">Planlar</a></li>
+                    <li class="navbar-item"><a href="about.html" class="navbar-link">Hakkımızda</a></li>
+                    <li class="navbar-item"><a href="contact.html" class="navbar-link">İletişim</a></li>
+                    <li class="navbar-item"><a href="profile.html" class="navbar-link">Profilim</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="/" class="navbar-brand">ASR-APP</a>
-            <ul class="navbar-menu">
-                <li class="navbar-item"><a href="/" class="navbar-link">Home</a></li>
-                <li class="navbar-item"><a href="about.html" class="navbar-link">About</a></li>
-                <li class="navbar-item"><a href="#" class="navbar-link">Services</a></li>
-                <li class="navbar-item"><a href="#" class="navbar-link">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <h1>Automatic Speech Recognition Application</h1>
-
-    <button id="start-btn">Start Listening</button>
+    <div><h1>Automatic Speech Recognition Application</h1></div>
 
     <div>
-        <img id="voice-signal" src="images/voice-signal.jpg" alt="">
+        <img id="voice-signal" src="images/voice-signal-black.png" alt="">
+        <p id="status">Butona bastıktan sonra program konuşmanızı analiz etmeye başlar...</p>
     </div>
-    
-    <p id="status">Press the button to start listening...</p>
 
+    <div><button id="start-btn">Okumaya Başla</button></div>
+    
     <div class="text-container">
         <h2>Okunan Metin:</h2>
-        <p id="transcribed-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aut blanditiis doloribus enim, eum fugiat, id laboriosam laborum molestiae obcaecati officiis quae quaerat quisquam reprehenderit similique soluta unde vitae voluptatem.</p>
+        <p id="content">
+            Alice, ablasıyla birlikte nehrin kıyısında boş boş oturmaktan sıkılmaya başlamıştı:
+            Ablasının okuduğu kitaba şöyle göz ucuyla bir-iki baktıysa da kitapta ne resim ne de
+            konuşma vardı; “Resimsiz ya da konuşmasız bir kitap,” diye düşündü Alice, “ne işe yarar?”
+            Kendi kendine düşünüp (düşünebildiği kadarıyla tabii, sıcak hava uykusunu getirip onu 
+            sersemletmişti), papatya tacı yapmanın vereceği keyif yerinden kalkıp papatya toplamaya
+            değer mi karar vermeye çalışıyordu ki yanından koşarak pembe gözlü Beyaz Tavşan geçti.
+        </p>
     </div>
 
-    <div class="comparison-container">
-        <h2>Comparison Text:</h2>
-        <textarea id="comparison-text" placeholder="Enter text to compare..."></textarea>
-        <button id="compare-btn">Compare Texts</button>
+    <div class="text-container">
+        <h2>Okuduğum:</h2>
+        <p id="reading content">
+            Alice abla ile birlikte nehrin kıyısında
+        </p>
     </div>
 
-    <div id="analyzes">
 
-    </div>
-
-    <div class="analysis-container">
-        <h2>Analysis</h2>
-        <p id="accuracy">Accuracy: <span id="accuracy-value">0%</span></p>
-        <p id="misspelled-count">Misspelled Words: <span id="misspelled-value">0</span></p>
+    <div class="text-container" id="analysis-container">
+        <h2>Analiz</h2>
+        <p id="accuracy">Doğruluk: <span id="accuracy-value">88%</span></p>
+        <p id="misspelled-count">Hatalı okunan kelimele sayısı: <span id="misspelled-value"> 1</span></p>
     </div>
 
 
@@ -62,7 +67,6 @@
         </footer>
     </div>
 
-</div>
 <script src="script.js"></script>
 </body>
 </html>

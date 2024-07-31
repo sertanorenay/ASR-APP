@@ -1,161 +1,368 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+@import url('https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset and base styles */
+* {
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  box-sizing: border-box;
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
-myelement {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  monospace;
-  font-weight: bold;
-}
-
-.container {
-  text-align: center;
-  background: #fff;
-  padding: 0px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
-}
-
-h1 {
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
   color: #333;
+  background-color: #f4f4f4;
 }
 
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  margin: 10px;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  background-color: #670f85;
-  color: #fff;
+/* Navigation styles */
+.navbar-brand {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
-/* Navbar styles */
 .navbar {
-  background-color: #670f85;
-  color: white;
-  padding: 10px 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #2c3e50;
+  padding: 1rem 0;
 }
 
 .navbar-container {
-  width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 2rem;
 }
 
 .navbar-brand {
-  font-size: 24px;
+  color: #ecf0f1;
+  font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
-  color: white;
 }
 
 .navbar-menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  list-style-type: none;
   display: flex;
 }
 
 .navbar-item {
-  margin-left: 20px;
+  margin-left: 1.5rem;
 }
 
 .navbar-link {
+  color: #ecf0f1;
   text-decoration: none;
-  color: white;
-  font-size: 16px;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
+  font-weight: 500;
 }
 
 .navbar-link:hover {
-  color: #ff6347; /* Tomato color */
+  color: #3498db;
 }
 
-button:hover {
-  background-color: #4f0b66;
-}
-
-.text-container,
-.comparison-container {
-  max-width: 40%;
-  margin: 20px 0;
-}
-
-textarea {
-  width: 100%;
-  height: 100px;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  resize: none;
-}
-
-#result {
-  margin-top: 20px;
-  font-size: 18px;
-}
-
-textarea {
+/* Main content styles */
+h1 {
   text-align: center;
+  margin: 2rem 0;
+  color: #2c3e50;
+}
+
+#start-btn {
+  display: block;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#start-btn:hover {
+  background-color: #670F85;
+}
+
+#voice-signal,
+#table,
+#isteknoloji {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+#status {
+  text-align: center;
+  margin: 1rem 0;
+  font-style: italic;
+  color: #7f8c8d;
+}
+
+.text-container {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+#content, #reading-content {
+  text-align: justify;
+}
+
+#analysis-container {
+  background-color: #f1f5f7;
+}
+
+#accuracy, #misspelled-count {
+  margin-bottom: 0.5rem;
+}
+
+#accuracy-value, #misspelled-value {
+  font-weight: bold;
+  color: #15a046;
 }
 
 /* Footer styles */
 .footer-div {
-  background-color: #670f85;
-  color: white;
-  padding: 20px 0;
+  background-color: #2c3e50;
+  color: #ecf0f1;
   text-align: center;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.footer-div footer {
-  margin: 0;
-}
-
-.footer-div p {
-  margin: 5px 0;
+  padding: 1rem 0;
+  margin-top: 2rem;
 }
 
 .footer-div a {
-  color: #f5f5f5;
+  color: #3498db;
   text-decoration: none;
-  transition: color 0.3s;
 }
 
-/* voice signal image*/
-#voice-signal {
-  max-width: 50%;
-  height: auto;
-  width: 25%; /* Adjust this value to make the image smaller */
-  /*
-  border: 2px solid #670f85; /* Optional: Add a border for better visibility
-  border-radius: 8px; /* Optional: Add rounded corners
-  */
+.footer-div a:hover {
+  text-decoration: underline;
 }
 
-/* Analysis section styles */
-.analysis-container {
-  margin-top: 20px;
-  text-align: left;
-  display: inline-block;
-  border: 1px solid #ddd;
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar-container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navbar-menu {
+      margin-top: 1rem;
+  }
+
+  .navbar-item {
+      margin-left: 0;
+      margin-right: 1rem;
+  }
+
+  .text-container {
+      padding: 1rem;
+  }
+}
+
+/* table content */
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.performance-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  background-color: #ffffff;
+}
+
+.performance-table th,
+.performance-table td {
   padding: 10px;
-  border-radius: 8px;
-  background-color: #f9f9f9;
+  text-align: center;
+  font-weight: 700;
 }
 
-.analysis-container h2 {
+.performance-table thead {
+  background-color: #670F85;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.performance-table thead th {
+  font-weight: bold;
+}
+
+.performance-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.performance-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.performance-table tbody tr:last-of-type {
+  border-bottom: 2px solid #670F85;
+}
+
+.performance-table tbody tr:hover {
+  background-color: #f5f5f5;
+  transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+      width: 60%;
+      padding: 10px;
+  }
+
+  .performance-table {
+      font-size: 0.8em;
+  }
+  
+  .performance-table th,
+  .performance-table td {
+      padding: 8px 6px;
+  }
+}
+
+.graph-div {
+  background-color: #ffffff;
+}
+
+/* Centering the about-content and ensuring its children are centered */
+.about-content {
+  text-align: center;
+  max-width: 60%;
+  margin: 0 auto; /* Center the about-content within its parent */
+}
+
+/* Ensuring that .whoweare content is centered */
+.whoweare {
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 1rem;
+  margin: 1rem auto;
+  text-align: left; /* Align text to the left within the paragraph */
+}
+
+#isteknoloji {
+  padding: 20px;
+}
+
+.plans-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+.plan {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 1rem;
+  width: 280px;
+  text-align: center;
+}
+.plan h2 {
+  color: #2c3e50;
+}
+.plan-price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3498db;
+  margin: 1rem 0;
+}
+.plan-features {
+  list-style-type: none;
+  padding: 0;
+}
+.plan-features li {
+  margin: 0.5rem 0;
+}
+.plan-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.plan-button:hover {
+  background-color: #2980b9;
+}
+.payment-info {
+  text-align: center;
+  margin-top: 2rem;
+}
+.iyzico-logo {
+  max-width: 150px;
+  margin: 1rem auto;
+}
+
+.contact-content {
+  text-align: center;
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-info {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.contact-info h2 {
   margin-top: 0;
+  color: #333;
+}
+
+.contact-info p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.payment-info {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.payment-info h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.payment-info p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.iyzico-logo {
+  width: 150px;
+  height: auto;
+  margin-top: 10px;
 }
