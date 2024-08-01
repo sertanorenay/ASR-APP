@@ -44,7 +44,7 @@ body {
   position: relative;
   text-align: left;
   color: #ffffff;
-  padding: 20px;
+  padding: 2rem;
   background-color: rgba(255, 0, 0, 0.12);
   border-radius: 10px;
   margin-right: 5%;
@@ -52,13 +52,14 @@ body {
   flex-direction: column;
   align-items: center;
 
-  width: 50%;
-  height: 50%;
+  width: 55%;
+  height: 55%;
 }
 
 .cover-text h1 {
   text-align: center;
   font-size: 2.5rem;
+  margin-top: 0;
   margin-bottom: 1rem;
   font-family: "Pacifico", cursive;
   font-weight: 400;
@@ -72,10 +73,10 @@ body {
   margin-bottom: 2rem;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
   font-size: 24px;
+  margin: 0;
 }
 
 .button-container {
-  display: flex;
   gap: 20px; /* Space between buttons */
 }
 
@@ -379,7 +380,7 @@ h2 {
   margin: 0.5rem 0;
 }
 .plan-button {
-  background-color: #3498db;
+  background: linear-gradient(45deg, #670f85, #ff6347);
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
@@ -388,8 +389,9 @@ h2 {
   transition: background-color 0.3s;
 }
 .plan-button:hover {
-  background-color: #2980b9;
+  background: linear-gradient(45deg, #ff6347, #670f85);
 }
+
 .payment-info {
   text-align: center;
   margin-top: 2rem;
@@ -574,3 +576,30 @@ h2 {
   max-width: 100%;
 }
 
+/* Fancy Header Styling */
+.fancy-header {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1rem;
+  background: linear-gradient(45deg, #670f85, #ff6347);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fancy-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-family: "Pacifico", cursive;
+}
+
+.fancy-header p {
+  font-size: 28px !important;
+  font-size: 1.2rem;
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+h2.intro-title {
+  color: #f4f4f4;
+}
