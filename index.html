@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speech Recognition App</title>
+    <title>YADOBA</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/artificial-intelligence-248/64/Speech_Recognition-512.png" type="image/x-icon">
 </head>
@@ -38,44 +38,36 @@
         </div>
     </div>
 
-    <!--
-        <div>
-            <img id="voice-signal" src="images/voice-signal-black.png" alt="">
-            <p id="status">Butona bastıktan sonra program konuşmanızı analiz etmeye başlar...</p>
-        </div>
-    -->
+    <div class="content-section">
 
-    <div><button id="start-btn">Okumaya Başla</button></div>
+
+        <section class="features">
+            <div class="main-header"><h2 class="section-title">Özellikler</h2></div>
+            <div class="feature-item">
+                <h3>Konuşma Tanıma</h3>
+                <p>YADOBA, ileri düzey konuşma tanıma teknolojisi ile öğrencilerin doğru telaffuz ve anlama becerilerini geliştirmelerine yardımcı olur.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Kişiselleştirilmiş Öğrenme</h3>
+                <p>Öğrencilerin ihtiyaçlarına göre uyarlanmış kişiselleştirilmiş öğrenme planları ile her öğrenciye özel çözümler sunuyoruz.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Anlık Geri Bildirim</h3>
+                <p>Yapay zeka destekli sistemimiz, anında geri bildirim vererek öğrencilerin performansını anında değerlendirmesine olanak tanır.</p>
+            </div>
+        </section>
+        
+        <section class="benefits">
+            <h2 class="section-title">YADOBA'nın Avantajları</h2>
+            <ul>
+                <li>Daha iyi telaffuz ve dil anlama yetenekleri</li>
+                <li>Gelişmiş okuma ve dinleme becerileri</li>
+                <li>Kişiselleştirilmiş öğrenme deneyimi</li>
+                <li>Yüksek doğruluk oranı ile güvenilir sonuçlar</li>
+            </ul>
+        </section>
+    </div>
     
-    <div class="text-container">
-        <h2>Okunan Metin:</h2>
-        <p id="content">
-            Alice, ablasıyla birlikte nehrin kıyısında boş boş oturmaktan sıkılmaya başlamıştı:
-            Ablasının okuduğu kitaba şöyle göz ucuyla bir-iki baktıysa da kitapta ne resim ne de
-            konuşma vardı; “Resimsiz ya da konuşmasız bir kitap,” diye düşündü Alice, “ne işe yarar?”
-            Kendi kendine düşünüp (düşünebildiği kadarıyla tabii, sıcak hava uykusunu getirip onu 
-            sersemletmişti), papatya tacı yapmanın vereceği keyif yerinden kalkıp papatya toplamaya
-            değer mi karar vermeye çalışıyordu ki yanından koşarak pembe gözlü Beyaz Tavşan geçti.
-        </p>
-    </div>
-
-    <div class="text-container">
-        <h2>Okuduğum:</h2>
-        <p id="reading content">
-            Alice abla ile birlikte nehrin kıyısında
-        </p>
-    </div>
-
-
-    <div class="text-container" id="analysis-container">
-        <h2>Analiz</h2>
-        <p id="accuracy">Doğruluk: <span id="accuracy-value">88%</span></p>
-        <p id="misspelled-count">Hatalı okunan kelimele sayısı: <span id="misspelled-value"> 1</span></p>
-    </div>
-
-
-    <div id="result"></div>
-
     <div class="footer-div">
         <footer>
             <p>Copyright &copy; 2024 YADOBA - All Rights Reserved.</p>
