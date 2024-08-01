@@ -51,6 +51,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  width: 50%;
+  height: 50%;
 }
 
 .cover-text h1 {
@@ -60,6 +63,7 @@ body {
   font-family: "Pacifico", cursive;
   font-weight: 400;
   font-optical-sizing: auto;
+  font-size: 50px;
 }
 
 .cover-text p {
@@ -67,6 +71,7 @@ body {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  font-size: 24px;
 }
 
 .button-container {
