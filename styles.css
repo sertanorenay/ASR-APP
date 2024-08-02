@@ -27,7 +27,7 @@ body {
   margin-bottom: 2rem;
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* Align text to the right */
+  justify-content: flex-end;
 }
 
 .cover-image {
@@ -67,7 +67,7 @@ body {
   font-size: 50px;
 }
 
-.cover-text p {
+.cover-text p{
   text-align: center;
   font-size: 1.2rem;
   margin-bottom: 2rem;
