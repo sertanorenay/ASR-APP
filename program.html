@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/logo.ico" type="image/x-icon">
+</head>
+<body>
+
+    <div class="nav-dir">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="index.html" class="navbar-brand">YADOBA</a>
+                <ul class="navbar-menu">
+                    <li class="navbar-item"><a href="index.html" class="navbar-link">Anasayfa</a></li>
+                    <li class="navbar-item"><a href="plans.html" class="navbar-link">Planlar</a></li>
+                    <li class="navbar-item"><a href="about.html" class="navbar-link">Hakkımızda</a></li>
+                    <li class="navbar-item"><a href="contact.html" class="navbar-link">İletişim</a></li>
+                    <li class="navbar-item"><a href="profile.html" class="navbar-link">Profilim</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!--
+        <div>
+            <img id="voice-signal" src="images/voice-signal-black.png" alt="">
+            <p id="status">Butona bastıktan sonra program konuşmanızı analiz etmeye başlar...</p>
+        </div>
+    -->
+
+    <div><button id="start-btn">Okumaya Başla</button></div>
+    
+    <div class="text-container">
+        <h2>Okunan Metin:</h2>
+        <p id="content">
+            Alice, ablasıyla birlikte nehrin kıyısında boş boş oturmaktan sıkılmaya başlamıştı:
+            Ablasının okuduğu kitaba şöyle göz ucuyla bir-iki baktıysa da kitapta ne resim ne de
+            konuşma vardı; “Resimsiz ya da konuşmasız bir kitap,” diye düşündü Alice, “ne işe yarar?”
+            Kendi kendine düşünüp (düşünebildiği kadarıyla tabii, sıcak hava uykusunu getirip onu 
+            sersemletmişti), papatya tacı yapmanın vereceği keyif yerinden kalkıp papatya toplamaya
+            değer mi karar vermeye çalışıyordu ki yanından koşarak pembe gözlü Beyaz Tavşan geçti.
+        </p>
+    </div>
+
+    <div class="text-container">
+        <h2>Okuduğum:</h2>
+        <p id="reading content">
+            Alice abla ile birlikte nehrin kıyısında
+        </p>
+    </div>
+
+
+    <div class="text-container" id="analysis-container">
+        <h2>Analiz</h2>
+        <p id="accuracy">Doğruluk: <span id="accuracy-value">88%</span></p>
+        <p id="misspelled-count">Hatalı okunan kelimele sayısı: <span id="misspelled-value"> 1</span></p>
+    </div>
+
+
+    <div id="result"></div>
+
+    <div class="footer-div">
+        <footer>
+            <p>Copyright &copy; 2024 YADOBA - All Rights Reserved.</p>
+            <p><a href="mailto:youremail@example.com">yadoba@isteknoloji.com</a></p>
+        </footer>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
