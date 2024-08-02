@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/logo.ico" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+
+    <div class="nav-dir">
+      <nav class="navbar">
+        <div class="navbar-container">
+          <a href="index.html" class="navbar-brand">YADOBA</a>
+          <ul class="navbar-menu">
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-link">Anasayfa</a>
+            </li>
+            <li class="navbar-item">
+              <a href="plans.html" class="navbar-link">Planlar</a>
+            </li>
+            <li class="navbar-item">
+              <a href="about.html" class="navbar-link">Hakkımızda</a>
+            </li>
+            <li class="navbar-item">
+              <a href="contact.html" class="navbar-link">İletişim</a>
+            </li>
+            <li class="navbar-item">
+              <a href="profile.html" class="navbar-link">Profilim</a>
+            </li>
+            <li class="navbar-item">
+              <img
+                src="images/menu-white-icon.png"
+                alt="Menu Icon"
+                class="menu-icon"
+              />
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <form class="login">
+        <div><h1 class="fancy-font">Kayıt ol</h1></div>
+        <div>
+          <label for="name">İsim:</label>
+          <input type="text" id="name" required />
+        </div>
+
+        <div>
+          <label for="lastname">Soyisim:</label>
+          <input type="text" id="lastname" required />
+        </div>
+
+        <div>
+          <label for="email">E-Mail Adresi:</label>
+          <input type="text" id="email" placeholder="örnek@mail.com" required />
+        </div>
+
+        <div>
+          <label for="username">Kullanıcı Adı:</label>
+          <input type="text" id="username" required />
+        </div>
+
+        <div>
+          <label for="password">Şifre:</label>
+          <input type="password" id="password" required />
+        </div>
+
+        <div>
+          <button>Kayıt Ol</button>
+        </div>
+
+        <div class="register-section">
+            <p>Zaten kayıtlı bir kullanıcı mısın? <a href="login.html">Giriş Yap</a></p>
+        </div>
+    </form>
+
+    <div class="footer-div">
+      <footer>
+        <p>Copyright &copy; 2024 YADOBA - All Rights Reserved.</p>
+        <p><a href="mailto:youremail@example.com">yadoba@isteknoloji.com</a></p>
+      </footer>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

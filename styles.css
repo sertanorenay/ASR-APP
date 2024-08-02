@@ -71,9 +71,10 @@ body {
   text-align: center;
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-  font-size: 24px;
+  font-size: 26px;
   margin: auto;
+  color: #333;
+  font-weight: bold;
 }
 
 .button-container {
@@ -99,11 +100,12 @@ body {
 /* Navigation styles */
 .navbar-brand {
   font-family: "Pacifico", cursive;
-  /*
-  font-family: "Noto Serif", serif;
-  */
+  color: #ff6347;
   font-optical-sizing: auto;
   font-style: normal;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .navbar {
@@ -118,13 +120,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
-}
-
-.navbar-brand {
-  color: #ecf0f1;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
 }
 
 .navbar-menu {
@@ -144,7 +139,7 @@ body {
 }
 
 .navbar-link:hover {
-  color: #3498db;
+  color: #ff6347;
 }
 
 /* Main content styles */
@@ -228,7 +223,7 @@ h2 {
 }
 
 .footer-div a {
-  color: #3498db;
+  color: #ff6347;
   text-decoration: none;
 }
 
@@ -477,7 +472,7 @@ h2 {
   display: block;
   width: 50px;
   height: 3px;
-  background-color: #3498db;
+  background-color: #ff6347;
   margin: 1rem auto 0;
 }
 
@@ -506,7 +501,7 @@ h2 {
 
 .feature-item h3 {
   font-size: 1.5rem;
-  color: #3498db;
+  color: #670F85;
   margin-bottom: 1rem;
 }
 
@@ -602,4 +597,114 @@ h2 {
 
 h2.intro-title {
   color: #f4f4f4;
+}
+
+
+/* login + html */
+form {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form div {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+  border: 2px solid #0d044b;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #180b66;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+  background: linear-gradient(45deg, #670f85, #ff6347);
+}
+
+button:hover {
+  background: linear-gradient(45deg, #ff6347, #670f85);
+}
+
+form h1 {
+  text-align: center;
+  color: #ff6347;
+}
+
+.menu-icon {
+align-items: center;
+  width: 24px;
+  height: 24px;
+}
+
+.fancy-font {
+  font-family: "Pacifico", cursive;
+}
+
+/* PARTICLES */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ff6347; /* Fallback color */
+  background-image: url(""); /* Add a background image if you want */
+  background-size: cover;
+  
+  z-index: -1; /* Ensure it is behind other elements */
+}
+
+.login {
+  position: relative;
+  z-index: 1;
+  /* Rest of your login form styles */
+}
+
+/* Register Section */
+.register-section {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.register-section p {
+  color: #333;
+}
+
+.register-section a {
+  color: #ff6347; /* Matching the button color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-section a:hover {
+  text-decoration: underline;
 }
